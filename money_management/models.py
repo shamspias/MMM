@@ -24,6 +24,7 @@ class MoneyManagement(models.Model):
     salary = models.DecimalField(default=0.0)
     expense = models.ForeignKey(Expenses, on_delete=models.CASCADE, blank=True, null=True)
     loan = models.ForeignKey(Loans, on_delete=models.CASCADE, blank=True, null=True)
+    date = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.salary
