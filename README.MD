@@ -12,6 +12,7 @@ Django Based simple app to calculate expanse of each month and keep track of eve
 ### How To Deploy
 
 * Install the lasted version of docker
+* Rename example.env to .env and set with your credentials 
 * After installing docker use
 
 `docker-compose build`
