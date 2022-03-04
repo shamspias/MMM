@@ -135,3 +135,10 @@ class MoneyManagementDelete(SuccessMessageMixin, DeleteView, LoginRequiredMixin)
     model = MoneyManagement
     success_url = reverse_lazy('mm_list')
     success_message = "MM deleted!"
+
+
+class GenerateReports(ListView, LoginRequiredMixin):
+    """
+    Generate reports like monthly weakly daily expanse and export as csv or pdf
+    """
+    pass
