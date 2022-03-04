@@ -21,7 +21,7 @@ import environ
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = os.path.dirname(PROJECT_DIR)
+BASE_DIR = os.path.join(PROJECT_DIR)
 
 env = environ.Env(
     DEBUG=(bool, False),
