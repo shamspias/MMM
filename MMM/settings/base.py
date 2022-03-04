@@ -55,7 +55,7 @@ INSTALLED_APPS = [
 
 ]
 
-# SITE_ID = int(env('SITE_ID'))
+SITE_ID = int(env('SITE_ID'))
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
