@@ -24,7 +24,7 @@ class MoneyManagement(models.Model):
     CHOICE_MONTH = (
         ('January', 'Jan'),
         ('February', 'Feb'),
-        ('March', 'March'),
+        ('March', 'Mar'),
         ('April', 'Apr'),
         ('May', 'May'),
         ('June', 'Jun'),
