@@ -45,3 +45,33 @@ class MoneyManagement(models.Model):
 
     def __str__(self):
         return str(self.salary) + " In " + self.month + " Month"
+
+    def get_saving(self):
+        """
+        Calculate remaining money after expanse
+        :return: total remaining money
+        """
+        total_expense = 0
+        for exp in self.expense.all():
+            total_expense += exp.amount
+        return self.salary - total_expense
+
+    def get_total_expense(self):
+        """
+        Calculate total expense amount
+        :return: total expanse amount
+        """
+        total_expense = 0
+        for exp in self.expense.all():
+            total_expense += exp.amount
+        return total_expense
+
+    def get_total_loan(self):
+        """
+        Calculate total amount of loan
+        :return:  total loan amount
+        """
+        total_loan = 0
+        for exp in self.loan.all():
+            total_loan += exp.amount
+        return total_loan
